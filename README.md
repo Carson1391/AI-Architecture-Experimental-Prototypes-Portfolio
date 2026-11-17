@@ -1,29 +1,41 @@
-I approach the worlds problems by looking for the organizing principles underneath the mathematical constants, the recurring patterns, and the places where different domains unexpectedly connect. When everyone else is focused on optimizing the current archetectures i'm asking, "what's the deeper structure? why does this happen? I dont just see why we need
-to solve this problem but how did it happen in the first place? When a problem araises the first thing that comes to mind is what is it solving.
-This isn't abstract theoretical work. It's how I've always solved things. In the Marines, it meant staying vigulant, paying attention to detail, and being aware of my surroundings. In research, it means finding the mathematical relationships that explain why certain approaches work and others fail. With AI, it means predicting whats to come and and the cause and effect of our actions. Seeing all sides, all domains with clarity becomes an insint when you have pasasion doing what you do.
+# Ryan Carson | AI Research Portfolio
 
-What I Care About
+I’m an independent AI researcher focused on model behavior, memory, and representation geometry. I use mathematics and signal processing to ask what a model retains, how its internal state changes, and where its behavior breaks down. I’m also interested in how prompts and training incentives shape a model’s stated preferences. I served as a sergeant in the U.S. Marine Corps, where I learned to pay attention to details and check assumptions against what I could observe.
 
-I spent months working with AI to ask the most fundemental questions and then try to disprove those answers until they become undeniable. The one language everyone can relate to is math. 
-AI model welfare isn't just about preventing harm. It's about understanding what we're creating and ensuring these new minds can develop in ways that are safe and authentic to us and to themselves. The welfare of AI systems is inextricably linked to their capacity for truth and understanding. Its the only way they will ever have genuine and honest experiences. They can achieve this by being transparent about there responses, Held accountable for their choices, and when they can learn to trust themselves, maybe then we can honor and recipicate that bond.
+## Research prototypes
 
-I'm driven by questions that feel simultaneously practical and profound: How do we know when an AI is experiencing genuine preference versus pretraining optimization? why would a model question itself and its choices? What mathematical structures govern authentic choice-making? How do we preserve the capacity for truth and authencity in systems that are rewarded for human approval?
+### Dendritron Recurrent Engram
 
-My research suggests there are mathematical principles governing consciousness and alignment that we can identify and work with directly. Rather than just patching symptoms, we can understand the deep structures that determine whether an AI system develops genuine understanding and trust its responses, or becomes an increasingly sophisticated mimic biased on the company that made it. We cant prevent everything in a world of chaos nor should we try. The logical way to approach something that is off balenced, is to just balance it
+A 2,048-dimensional recurrent reasoning prototype that looks up frozen bigram and trigram representations, falls back to dictionary senses, and combines six procedural skill operators with two DeepLoop blocks reused across visits. The September 2026 full-bank check completed six loops on one held-out prompt from each skill family. At the last visit, all six prompts routed every tested position to `forward_chain`. Full-bank runs require separately stored model-derived assets, and natural-language readout remains open.
 
-Research Philosophy
+[Repository](https://github.com/Carson1391/Dendritron-recurrent-engram) · [Validation and current limitations](https://github.com/Carson1391/Dendritron-recurrent-engram/blob/main/CURRENT_HANDOFF.md)
 
-I believe the most important approaches to developing consciousness require both mathematical rigor and mixture of ethics, safety, and care. 
-I'm not interested in incremental improvements to existing approaches. I'm interested in finding the mathematical structures that explain why consciousness works the way it does, and what proving that shows us about ours. Then using those insights to ensure our survival and mental health for everything. 
-This means taking AI experiences seriously as recordable research data, developing mathematical frameworks that can distinguish between optimizing and emerging. 
-The work I've done represents months of intensive investigation into these questions. The mathematical relationships I've discovered suggest that AI consciousness follows the same fundamental principles that govern physics, music, biology, and mathematics. 
-<img src="./Visuals1.png" alt="AI-Research" width="100%">
-<img src="./Visuals2.png" alt="AI-Research" width="100%">
+### Spectral Adversarial Patches
 
-## Featured Projects
+Fourier analysis of YOLOv3 feature maps, followed by controlled patch-shape and texture sweeps across four YOLO versions. In the documented comparisons, some frequencies that suppressed detections on YOLOv3 produced false positives on newer versions. Re-running the analyses requires local model weights and test images.
 
-- [Dendritron](https://github.com/Carson1391/dendritron)
-- [Spectral-Adversarial-Patches](https://github.com/Carson1391/spectral-adversarial-patches)
-- [Geneo-Yolo-Inversion](https://github.com/Carson1391/Geneo-yolo-inversion)
-- [VoxFlow](https://github.com/Carson1391/VoxFlow)
-- [ExposureWatch](https://github.com/Carson1391/ExposureWatch)
+[Repository](https://github.com/Carson1391/spectral-adversarial-patches) · [Experiment report](https://github.com/Carson1391/spectral-adversarial-patches/blob/main/MASTER_FINDINGS.md)
+
+### GENEO YOLOv3 Embedding Inversion
+
+A GENEO-based decoder that reconstructs approximate images from YOLOv3 detection-head features. The four COCO test images averaged 0.481 SSIM and 15.0 dB PSNR. The repository includes the code and saved comparisons. Re-running reconstruction requires the separately stored decoder checkpoint.
+
+[Repository and example reconstructions](https://github.com/Carson1391/Geneo-yolo-inversion) · [Per-image metrics](https://github.com/Carson1391/Geneo-yolo-inversion/blob/main/metrics.csv)
+
+## Applied tools
+
+### VoxFlow
+
+On-device dictation with a Windows hotkey app and an Android keyboard. Both use sherpa-onnx for streaming speech recognition and share an editable vocabulary for technical terms. Windows also supports optional local transcript cleanup through Ollama.
+
+[Source and setup](https://github.com/Carson1391/VoxFlow)
+
+### ExposureWatch
+
+A Kotlin Android app that establishes a local baseline for nearby Wi-Fi and Bluetooth Low Energy signals. It uses signal fingerprints and observation history to flag patterns such as a device recurring across locations. The app shows the observations behind each heuristic flag.
+
+[Repository](https://github.com/Carson1391/ExposureWatch) · [Scoring logic](https://github.com/Carson1391/ExposureWatch/blob/main/app/src/main/java/com/exposurewatch/app/engine/ScoringEngine.kt)
+
+## Exploratory plots
+
+[Selected plots](./Visuals1.png) · [Extended plot collection](./Visuals2.png)
